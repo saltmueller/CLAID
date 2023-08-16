@@ -1,4 +1,5 @@
 import argparse
+import common
 from git import Repo
 from install import install_package
 from create import create
@@ -34,6 +35,9 @@ def init():
     print("Error, command \"claid {}\" is unknown.".format(args.command))
 
 
-def list_packages(arg1, *args):
-    print("listing packages")
-
+def list_packages():
+    packages = common.parse_package_list()
+    print("Packages:")
+    for key in packages:
+        print(key)
+    print('-' * 40)

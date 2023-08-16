@@ -20,6 +20,5 @@ else
 
 fi
 . ~/.claidrc
-chmod u+x claid/claid
 
 echo "Installed CLAID successfully (do not forget to source ~/.bashrc or restart your terminal in order to use CLAID)."
